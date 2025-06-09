@@ -1,4 +1,5 @@
 /* Cuerpo del sitio */
+
 body {
   font-family: Roboto;
   font-size: 1.2em;
@@ -27,8 +28,6 @@ body::before {
   /* nivel de transparencia */
   z-index: -1;
 }
-
-
 
 /*-------------------------------*/
 
@@ -91,12 +90,6 @@ nav {
   max-height: 8em;
 }
 
-/*
-img {
-  max-width: 8em;
-  max-height: 8em;
-}*/
-
 .rounded.img-thumbnail {
   background-color: #616161;
 }
@@ -145,7 +138,7 @@ img {
   transition: transform 0.3s ease;
 }
 
-.card:hover {
+.custom-card-animation:hover {
   transform: scale(0.8);
 }
 
@@ -205,3 +198,45 @@ img {
 }
 
 /*----------------------------------*/
+
+.custom-bg-img-body {
+    background-image: URL(./assets/images/5630939.jpg);
+    background-size: auto;
+}
+
+.custom-bg-navbar {
+    background-color: #FFC067 !important;
+}
+
+.navbar-brand,
+.nav-link,
+.custom-color-main-card-title {
+    color: white !important;
+}
+
+.custom-bg-color-footer-style {
+    background-color: #f8f9fa;
+}
+
+.custom-height-textarea-style {
+    height: 10rem !important;
+}
+
+.custom-img-navbar {
+    width: 3rem;
+}
+
+.custom-list-group {
+    padding: 0 15rem !important;
+    box-shadow: none !important;
+}
+
+.custom-badge {
+    height: -webkit-fill-available;
+    background-color: #ffc067 !important;
+}
+
+.custom-list-group-item {
+    border: 1.5px solid #dee2e6 !important;
+    margin: -0.1rem;
+}
