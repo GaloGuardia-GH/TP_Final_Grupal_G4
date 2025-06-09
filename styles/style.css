@@ -139,7 +139,7 @@ nav {
 }
 
 .custom-card-animation:hover {
-  transform: scale(0.8);
+  transform: scale(1.05);
 }
 
 .color-card {
@@ -236,7 +236,21 @@ nav {
     background-color: #ffc067 !important;
 }
 
+.custom-badge-secondary {
+    background-color: #176dc2 !important;
+}
+
 .custom-list-group-item {
     border: 1.5px solid #dee2e6 !important;
     margin: -0.1rem;
+}
+
+.custom-img-fix-style {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+}
+
+.custom-card-text {
+    font-size: 15px !important;
 }
