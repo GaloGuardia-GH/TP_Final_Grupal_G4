@@ -227,11 +227,13 @@ nav {
 }
 
 .custom-list-group {
-    padding: 0 15rem !important;
+    width: 50% !important;
+    margin: auto !important;
     box-shadow: none !important;
 }
 
-.custom-badge {
+.custom-badge,
+.custom-button {
     height: -webkit-fill-available;
     background-color: #ffc067 !important;
 }
@@ -240,9 +242,14 @@ nav {
     background-color: #176dc2 !important;
 }
 
+.custom-text-secondary {
+    color: #176dc2 !important;
+}
+
 .custom-list-group-item {
-    border: 1.5px solid #dee2e6 !important;
+    border: 2px solid #dee2e6 !important;
     margin: -0.1rem;
+    padding: 1rem !important;
 }
 
 .custom-img-fix-style {
@@ -253,4 +260,22 @@ nav {
 
 .custom-card-text {
     font-size: 15px !important;
+}
+
+.custom-button-text {
+    font-size: 16px !important;
+    color: white !important;
+}
+
+.custom-card-badge-text {
+    font-size: 18px !important;
+}
+
+.custom-form-control {
+    border-radius: 2rem !important;
+    text-align: center;
+}
+
+.custom-entrada-img {
+    filter: invert(1);
 }
