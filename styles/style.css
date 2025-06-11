@@ -204,7 +204,8 @@ nav {
     background-size: auto;
 }
 
-.custom-bg-navbar {
+.custom-bg-navbar,
+.custom-button {
     background-color: #FFC067 !important;
 }
 
@@ -232,8 +233,7 @@ nav {
     box-shadow: none !important;
 }
 
-.custom-badge,
-.custom-button {
+.custom-badge {
     height: -webkit-fill-available;
     background-color: #ffc067 !important;
 }
@@ -278,4 +278,8 @@ nav {
 
 .custom-entrada-img {
     filter: invert(1);
+}
+
+.custom-card-ticket {
+    height: 21rem !important;
 }
