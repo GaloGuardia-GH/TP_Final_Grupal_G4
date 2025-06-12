@@ -291,6 +291,10 @@ nav {
     height: 21rem !important;
 }
 
+.custom-card-activities {
+    height: 10rem !important;
+}
+
 .custom-height-textarea-style {
     height: 10rem !important;
 }
