@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BAaventura</title>
+        <link rel="icon" type="image/png" href="../img/favicon.png">
+        <link rel="stylesheet" href="../styles/style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/5cce9c02bc.js" crossorigin="anonymous"></script>
+    </head>
+    <body class="custom-bg-img-body pb-4">
+        <header>
+            <nav class="navbar navbar-expand-lg border-bottom border-white custom-bg-navbar">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+                        <div>
+                            <a class="navbar-brand" href="./inicio.html">
+                                <img src="../img/BAaventura.png" class="custom-img-navbar rounded-3" alt="Logo BAaventura">
+                            </a>
+                        </div>
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="./inicio.html"><b>Inicio</b></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./nosotros.html"><b>Nosotros</b></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./entradas.html"><b>Entradas</b></a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link text-dark dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <b>Parque</b>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#"><b>Atracciones y Actividades</b></a></li>
+                                    <li><a class="dropdown-item" href="./accesibilidad.html"><b>Accesibilidad</b></a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./contacto.html"><b>Contacto</b></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="my-3 mx-5 pb-5">
+                <h3 class="text-center p-3 border-bottom">Atracciones y actividades</h3>
+                <div class="d-flex flex-wrap justify-content-center mt-3">
+                    <div class="col-2 mx-5">
+                        <div class="card custom-card-activities p-3">
+                            <div class="card-body text-center fs-5 d-flex flex-column justify-content-center">
+                                <div class="form-check text-start">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckAventura" name="flexCheckAventura">
+                                    <label class="form-check-label custom-text-secondary" for="flexCheckAventura">
+                                        <b>Aventura</b>
+                                    </label>
+                                </div>
+                                <div class="form-check text-start">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckAgua" name="flexCheckAgua">
+                                    <label class="form-check-label custom-text-secondary" for="flexCheckAgua">
+                                        <b>Agua</b>
+                                    </label>
+                                </div>
+                                <div class="form-check text-start">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckShows" name="flexCheckShows">
+                                    <label class="form-check-label custom-text-secondary" for="flexCheckShows">
+                                        <b>Shows</b>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 mx-5">
+                        <div class="card custom-card-activities p-3">
+                            <div class="card-body w-100 d-flex flex-column justify-content-center">
+                                <label for="customRangeEdad" class="form-label custom-text-secondary"><b>Edad</b></label>
+                                <input type="range" class="form-range" min="0" max="100" id="customRangeEdad" name="customRangeEdad">
+                                <div class="d-flex justify-content-between custom-text-secondary">
+                                    <span><b>0</b></span>
+                                    <span><b>100</b></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2 mx-5">
+                        <div class="card custom-card-activities p-3">
+                            <div class="card-body w-100 d-flex flex-column justify-content-center">
+                                <label for="inputNumberAltura" class="custom-text-secondary"><b>Altura</b></label>
+                                <div class="d-flex align-items-center">
+                                    <input type="number" class="form-control" id="inputNumberAltura" name="inputNumberAltura">
+                                    <span class="custom-text-secondary ms-2"><b>m.</b></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="text-center p-2 fixed-bottom custom-bg-color-footer-style">
+                © 2025 Galo Guardia. Todos los derechos reservados.
+            </div>
+        </footer>
+    </body>
+</html>
