@@ -1,3 +1,5 @@
+import { atracciones } from './atracciones.js';
+
 function submitForm(form) {
     const floatingInputTextNombre = form.floatingInputTextNombre.value;
     const floatingInputTextEmail = form.floatingInputTextEmail.value;
