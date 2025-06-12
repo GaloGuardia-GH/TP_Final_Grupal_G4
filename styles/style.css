@@ -202,11 +202,18 @@ nav {
 .custom-bg-img-body {
     background-image: URL(./assets/images/5630939.jpg);
     background-size: auto;
+    min-height: 100vh;
 }
 
 .custom-bg-navbar,
-.custom-button {
+.custom-button,
+.custom-contact-icon-container {
     background-color: #FFC067 !important;
+}
+
+.custom-contact-icon-container:hover {
+    transform: scale(1.05);
+    cursor: pointer;
 }
 
 .navbar-brand,
@@ -283,3 +290,32 @@ nav {
 .custom-card-ticket {
     height: 21rem !important;
 }
+
+.custom-height-textarea-style {
+    height: 10rem !important;
+}
+
+.custom-contact-icon-size {
+    font-size: 25px;
+}
+
+/* Alerts */
+
+.fade-animation {
+    -webkit-animation: fadeinout 4s ease forwards;
+    animation: fadeinout 4s ease forwards;
+}
+
+@-webkit-keyframes fadeinout {
+    0%, 10% { opacity: 0; }
+    20%, 80% { opacity: 1; }
+    90%, 100% { opacity: 0; }
+}
+
+@keyframes fadeinout {
+    0%, 10% { opacity: 0; }
+    20%, 80% { opacity: 1; }
+    90%, 100% { opacity: 0; }
+}
+
+/*  */
