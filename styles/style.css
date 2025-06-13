@@ -21,11 +21,11 @@ body::before {
   bottom: 0;
   background-image: url("../img/BAaventura_fondo.png");
   background-size: contain;
-  background-repeat: round;
+  /* background-repeat: round; */
   background-position: center;
   background-attachment: fixed;
-  opacity: 0.150;
   /* nivel de transparencia */
+  opacity: 0.15;
   z-index: -1;
 }
 
@@ -301,6 +301,17 @@ nav {
 
 .custom-contact-icon-size {
     font-size: 25px;
+}
+
+.custom-search-button-control {
+    border-radius: 0 0.5rem 0.5rem 0 !important;
+    border-left: none !important;
+    background-color: white !important;
+    border-color: #dee2e6 !important;
+}
+
+.custom-search-button-control:hover {
+    color: #6c757d !important;
 }
 
 /* Alerts */
