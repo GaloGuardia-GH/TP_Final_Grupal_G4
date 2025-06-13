@@ -102,7 +102,27 @@
                         </div>
                     </div>
                 </div>
+                <div class="d-flex flex-wrap justify-content-center mt-5">
+                    <div class="col-6">
+                        <h3 class="text-secondary"><b>Listado</b></h3>
+                    </div>
+                    <div class="col-2">
+                        <div class="input-group mb-3 align-items-center">
+                            <input type="text" class="form-control" placeholder="Buscar" aria-label="Buscar" oninput="handleChangeSearchInput(this)">
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-secondary custom-search-button-control" type="button">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-8 d-flex flex-wrap justify-content-center">
+                        <div id="activities-container"></div>
+                    </div>
+                </div>
             </div>
+
+            <script type="module" src="../js/script.js" defer></script>
         </main>
         <footer>
             <div class="text-center p-2 fixed-bottom custom-bg-color-footer-style">
