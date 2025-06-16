@@ -58,19 +58,19 @@
                         <div class="card custom-card-activities p-3">
                             <div class="card-body text-center fs-5 d-flex flex-column justify-content-center">
                                 <div class="form-check text-start">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckAventura" name="flexCheckAventura">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckAventura" name="flexCheckAventura" onchange="handleChangeFilterInput()">
                                     <label class="form-check-label custom-text-secondary" for="flexCheckAventura">
                                         <b>Aventura</b>
                                     </label>
                                 </div>
                                 <div class="form-check text-start">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckAgua" name="flexCheckAgua">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckAgua" name="flexCheckAgua" onchange="handleChangeFilterInput()">
                                     <label class="form-check-label custom-text-secondary" for="flexCheckAgua">
                                         <b>Agua</b>
                                     </label>
                                 </div>
                                 <div class="form-check text-start">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckShows" name="flexCheckShows">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckShows" name="flexCheckShows" onchange="handleChangeFilterInput()">
                                     <label class="form-check-label custom-text-secondary" for="flexCheckShows">
                                         <b>Shows</b>
                                     </label>
@@ -81,8 +81,8 @@
                     <div class="col-3 mx-5">
                         <div class="card custom-card-activities p-3">
                             <div class="card-body w-100 d-flex flex-column justify-content-center">
-                                <label for="customRangeEdad" class="form-label custom-text-secondary"><b>Edad</b></label>
-                                <input type="range" class="form-range" min="0" max="100" id="customRangeEdad" name="customRangeEdad">
+                                <label for="customRangeEdad" id="customRangeEdadLabel" name="customRangeEdadLabel" class="form-label custom-text-secondary"></label>
+                                <input type="range" class="form-range" min="0" max="100" id="customRangeEdad" name="customRangeEdad" onchange="handleChangeFilterInput()">
                                 <div class="d-flex justify-content-between custom-text-secondary">
                                     <span><b>0</b></span>
                                     <span><b>100</b></span>
@@ -95,8 +95,8 @@
                             <div class="card-body w-100 d-flex flex-column justify-content-center">
                                 <label for="inputNumberAltura" class="custom-text-secondary"><b>Altura</b></label>
                                 <div class="d-flex align-items-center">
-                                    <input type="number" class="form-control" id="inputNumberAltura" name="inputNumberAltura">
-                                    <span class="custom-text-secondary ms-2"><b>m.</b></span>
+                                    <input type="number" class="form-control" id="inputNumberAltura" name="inputNumberAltura" onchange="handleChangeFilterInput()">
+                                    <span class="custom-text-secondary ms-2"><b>cm</b></span>
                                 </div>
                             </div>
                         </div>
@@ -108,7 +108,7 @@
                     </div>
                     <div class="col-2">
                         <div class="input-group mb-3 align-items-center">
-                            <input type="text" class="form-control" placeholder="Buscar" aria-label="Buscar" oninput="handleChangeSearchInput(this)">
+                            <input type="text" class="form-control" placeholder="Buscar" aria-label="Buscar" id="inputSearch" name="inputSearch" oninput="handleChangeFilterInput()">
                             <div class="input-group-append">
                                 <button class="btn btn-outline-secondary custom-search-button-control" type="button">
                                     <i class="fa-solid fa-magnifying-glass"></i>
