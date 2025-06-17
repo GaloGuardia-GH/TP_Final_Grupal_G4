@@ -13,13 +13,13 @@
     </head>
     <body class="custom-bg-img-body pb-4">
         <header>
-            <nav class="navbar navbar-expand-lg border-bottom border-white custom-bg-navbar">
+            <nav class="navbar navbar-expand-lg border-bottom border-white custom-bg-navbar fixed-top">
                 <div class="container-fluid">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
-                        <div>
+                        <div class="d-none d-md-block">
                             <a class="navbar-brand" href="./inicio.html">
                                 <img src="../img/BAaventura.png" class="custom-img-navbar rounded-3" alt="Logo BAaventura">
                             </a>
@@ -53,7 +53,7 @@
         </header>
         <main>
             <div class="m-3 pb-5">
-                <div class="text-center mx-5">
+                <div class="text-center mx-lg-5">
                     <div class="pb-3 border-bottom">
                         <h3 class="pt-3">BAventura</h3>
                         <small class="text-secondary"><i>Donde la imaginación se convierte en aventura</i></small>
@@ -87,6 +87,9 @@
                     </div>
                     <div class="card custom-card-animation m-3">
                         <div class="row g-0">
+                            <div class="col-md-4 d-block d-sm-none">
+                                <img src="../img/nosotros_2.jpg" class="img-fluid rounded-1 custom-img-fix-style" alt="Nosotros_2">
+                            </div>
                             <div class="col-md-8">
                                 <div class="card-body">
                                     <h5 class="card-title border-bottom pb-2"><b>🎢 Un viaje épico en cada rincón</b></h5>
@@ -106,7 +109,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-4 d-none d-md-block">
                                 <img src="../img/nosotros_2.jpg" class="img-fluid rounded-1 custom-img-fix-style" alt="Nosotros_2">
                             </div>
                         </div>
@@ -145,37 +148,37 @@
                             <b>¿Qué te espera en BAventura?</b>
                         </p>
                         <p class="m-3">
-                            <span class="badge custom-badge-secondary">
+                            <span class="badge custom-badge-secondary w-100-mobile">
                                 💫 <b>Un mundo de fantasía y emoción</b>
                             </span>
                             Sumergite en un entorno mágico donde cada atracción cuenta una historia, y cada paso te acerca a nuevas aventuras.
                         </p>
                         <p class="m-3">
-                            <span class="badge custom-badge-secondary">
+                            <span class="badge custom-badge-secondary w-100-mobile">
                                 🎢 <b>Montañas rusas y atracciones únicas</b>
                             </span>
                             Desde emocionantes caídas hasta giros inesperados, nuestras atracciones están diseñadas para ofrecerte la adrenalina que buscás.
                         </p>
                         <p class="m-3">
-                            <span class="badge custom-badge-secondary">
+                            <span class="badge custom-badge-secondary w-100-mobile">
                                 🎭 <b>Espectáculos en vivo y entretenimiento</b>
                             </span>
                             Disfrutá de shows impresionantes, desde acrobacias hasta magia, que te dejarán sin aliento y con ganas de más.
                         </p>
                         <p class="m-3">
-                            <span class="badge custom-badge-secondary">
+                            <span class="badge custom-badge-secondary w-100-mobile">
                                 🍔 <b>Gastronomía para todos los gustos</b>
                             </span>
                             Desde deliciosas comidas rápidas hasta opciones gourmet, nuestra oferta gastronómica satisface todos los paladares.
                         </p>
                         <p class="m-3">
-                            <span class="badge custom-badge-secondary">
+                            <span class="badge custom-badge-secondary w-100-mobile">
                                 🏰 <b>Áreas temáticas y zonas de descanso</b>
                             </span>
                             Relajate en espacios diseñados para que toda la familia disfrute, con áreas de descanso y juegos para los más pequeños.
                         </p>
                         <p class="m-3">
-                            <span class="badge custom-badge-secondary">
+                            <span class="badge custom-badge-secondary w-100-mobile">
                                 🎉 <b>Eventos especiales y promociones</b>
                             </span>
                             No te pierdas nuestras actividades especiales, concursos y promociones que hacen de cada visita algo único.
@@ -191,8 +194,9 @@
             </div>
         </main>
         <footer>
-            <div class="text-center p-2 fixed-bottom custom-bg-color-footer-style">
-                Grupo 4: Galo Guardia - Kevin Mediña - Milagros Garrido
+            <div class="d-flex justify-content-between align-items-center p-2 fixed-bottom custom-bg-color-footer-style text-secondary">
+                <span>Trabajo grupal - Materia Diseño y Desarrollo Web (11842 - Grupo 4) | Galo Guardia - Kevin Mediña - Milagros Garrido | <a href="https://galoguardia-gh.github.io/TP_Final_Grupal_G4/" target="_blank">Sitio del Grupo</a></span>
+                <img src="../img/uade_logo.png" class="custom-uade-img" alt="UADE_Image">
             </div>
         </footer>
     </body>

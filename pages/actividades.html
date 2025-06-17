@@ -12,13 +12,13 @@
     </head>
     <body class="custom-bg-img-body pb-4">
         <header>
-            <nav class="navbar navbar-expand-lg border-bottom border-white custom-bg-navbar">
+            <nav class="navbar navbar-expand-lg border-bottom border-white custom-bg-navbar fixed-top">
                 <div class="container-fluid">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
-                        <div>
+                        <div class="d-none d-md-block">
                             <a class="navbar-brand" href="./inicio.html">
                                 <img src="../img/BAaventura.png" class="custom-img-navbar rounded-3" alt="Logo BAaventura">
                             </a>
@@ -51,10 +51,10 @@
             </nav>
         </header>
         <main>
-            <div class="my-3 mx-5 pb-5">
-                <h3 class="text-center p-3 border-bottom">Atracciones y actividades</h3>
+            <div class="my-3 mx-lg-5 mx-3 pb-5">
+                <h3 class="text-center p-3 border-bottom">Atracciones y Actividades</h3>
                 <div class="d-flex flex-wrap justify-content-center mt-3">
-                    <div class="col-2 mx-5">
+                    <div class="col-lg-3 mx-lg-5 w-100-mobile">
                         <div class="card custom-card-activities p-3">
                             <div class="card-body text-center fs-5 d-flex flex-column justify-content-center">
                                 <div class="form-check text-start">
@@ -78,7 +78,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-3 mx-5">
+                    <div class="col-lg-3 w-100-mobile">
                         <div class="card custom-card-activities p-3">
                             <div class="card-body w-100 d-flex flex-column justify-content-center">
                                 <label for="customRangeEdad" id="customRangeEdadLabel" name="customRangeEdadLabel" class="form-label custom-text-secondary"></label>
@@ -90,7 +90,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-2 mx-5">
+                    <div class="col-lg-3 mx-lg-5 w-100-mobile">
                         <div class="card custom-card-activities p-3">
                             <div class="card-body w-100 d-flex flex-column justify-content-center">
                                 <label for="inputNumberAltura" class="custom-text-secondary"><b>Altura</b></label>
@@ -103,10 +103,10 @@
                     </div>
                 </div>
                 <div class="d-flex flex-wrap justify-content-center mt-5">
-                    <div class="col-6">
+                    <div class="col-lg-6 w-100-mobile">
                         <h3 class="text-secondary"><b>Listado</b></h3>
                     </div>
-                    <div class="col-2">
+                    <div class="col-lg-3 w-100-mobile">
                         <div class="input-group mb-3 align-items-center">
                             <input type="text" class="form-control" placeholder="Buscar" aria-label="Buscar" id="inputSearch" name="inputSearch" oninput="handleChangeFilterInput()">
                             <div class="input-group-append">
@@ -116,7 +116,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-8 d-flex flex-wrap justify-content-center">
+                    <div class="col-lg-9 d-flex flex-wrap justify-content-center">
                         <div id="activities-container"></div>
                     </div>
                 </div>
@@ -125,8 +125,9 @@
             <script type="module" src="../js/script.js" defer></script>
         </main>
         <footer>
-            <div class="text-center p-2 fixed-bottom custom-bg-color-footer-style">
-                Grupo 4: Galo Guardia - Kevin Mediña - Milagros Garrido
+            <div class="d-flex justify-content-between align-items-center p-2 fixed-bottom custom-bg-color-footer-style text-secondary">
+                <span>Trabajo grupal - Materia Diseño y Desarrollo Web (11842 - Grupo 4) | Galo Guardia - Kevin Mediña - Milagros Garrido | <a href="https://galoguardia-gh.github.io/TP_Final_Grupal_G4/" target="_blank">Sitio del Grupo</a></span>
+                <img src="../img/uade_logo.png" class="custom-uade-img" alt="UADE_Image">
             </div>
         </footer>
     </body>

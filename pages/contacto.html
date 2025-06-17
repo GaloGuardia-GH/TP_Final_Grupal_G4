@@ -13,13 +13,13 @@
     </head>
     <body class="custom-bg-img-body pb-4">
         <header>
-            <nav class="navbar navbar-expand-lg border-bottom border-white custom-bg-navbar">
+            <nav class="navbar navbar-expand-lg border-bottom border-white custom-bg-navbar fixed-top">
                 <div class="container-fluid">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
-                        <div>
+                        <div class="d-none d-md-block">
                             <a class="navbar-brand" href="./inicio.html">
                                 <img src="../img/BAaventura.png" class="custom-img-navbar rounded-3" alt="Logo BAaventura">
                             </a>
@@ -53,10 +53,10 @@
         </header>
         <main>
             <div class="m-3 pb-5">
-                <div class="mx-5">
+                <div class="mx-lg-5">
                     <h3 class="text-center p-3 border-bottom">Contacto y Soporte</h3>
                     <div class="row g-0 d-flex justify-content-center border-bottom">
-                        <div class="col-md-5 p-3">
+                        <div class="col-lg-5 p-3">
                             <h5><b>Formulario de contacto</b></h5>
                             <form onsubmit="return submitForm(this);">
                                 <div class="form-floating mb-3">
@@ -76,66 +76,67 @@
                                 </button>
                             </form>
                         </div>
-                        <div class="col-md-4 p-3">
+                        <div class="col-lg-4 p-3">
                             <div class="row g-0 d-flex align-items-center my-3">
-                                <div class="col-md-2 p-3 text-center rounded-4 custom-contact-icon-container">
+                                <div class="col-lg-2 p-3 text-center rounded-4 custom-contact-icon-container">
                                     <i class="fa-solid fa-message mt-1 custom-contact-icon-size"></i>
                                 </div>
-                                <div class="col-md-10 ps-3 d-flex flex-column">
+                                <div class="col-lg-10 ps-lg-3 d-flex flex-column my-2 my-lg-0 text-center text-lg-start">
                                     <h5><b>Chat o Whatsapp</b></h5>
                                     <p class="mb-0">Obtén asistencia rápida a través del chat o Whatsapp</p>
                                 </div>
                             </div>
                             <div class="row g-0 d-flex align-items-center my-3">
-                                <div class="col-md-2 p-3 text-center rounded-4 custom-contact-icon-container">
+                                <div class="col-lg-2 p-3 text-center rounded-4 custom-contact-icon-container">
                                     <i class="fa-solid fa-phone mt-1 custom-contact-icon-size"></i>
                                 </div>
-                                <div class="col-md-10 ps-3 d-flex flex-column">
+                                <div class="col-lg-10 ps-lg-3 d-flex flex-column my-2 my-lg-0 text-center text-lg-start">
                                     <h5><b>Teléfonos y correos oficiales</b></h5>
                                     <p class="mb-0">Consulta nuestros números de teléfono y correos electrónicos</p>
                                 </div>
                             </div>
                             <div class="row g-0 d-flex align-items-center my-3">
-                                <div class="col-md-2 p-3 text-center rounded-4 custom-contact-icon-container">
+                                <div class="col-lg-2 p-3 text-center rounded-4 custom-contact-icon-container">
                                     <i class="fa-solid fa-question mt-1 custom-contact-icon-size"></i>
                                 </div>
-                                <div class="col-md-10 ps-3 d-flex flex-column">
+                                <div class="col-lg-10 ps-lg-3 d-flex flex-column my-2 my-lg-0 text-center text-lg-start">
                                     <h5><b>Preguntas frecuentes</b></h5>
                                     <p class="mb-0">Lee nuestras FAO para encontrar respuestas</p>
                                 </div>
                             </div>
                             <div class="row g-0 d-flex align-items-center my-3">
-                                <div class="col-md-2 p-3 text-center rounded-4 custom-contact-icon-container">
+                                <div class="col-lg-2 p-3 text-center rounded-4 custom-contact-icon-container">
                                     <i class="fa-solid fa-location-dot mt-1 custom-contact-icon-size"></i>
                                 </div>
-                                <div class="col-md-10 ps-3 d-flex flex-column">
+                                <div class="col-lg-10 ps-lg-3 d-flex flex-column my-2 my-lg-0 text-center text-lg-start">
                                     <h5><b>Cómo llegar</b></h5>
                                     <p class="mb-0">Información sobre mapa, trasnporte público y estacionamiento</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="text-center w-50 m-auto mt-4">
+                    <div class="text-center w-lg-50 m-auto mt-4">
                         <h5><b>¿Necesitás ayuda? Estamos para acompañarte</b></h5>
                         <p>En BAventura, queremos que tu experiencia sea increíble desde el primer momento, y eso incluye brindarte una atención rápida, clara y cordial. Si tenés dudas, consultas, sugerencias o necesitás asistencia antes, durante o después de tu visita, nuestro equipo de Atención al Visitante está listo para ayudarte.</p>
                         <p>Podés contactarnos por medio de los canales mencionados. También podés consultar nuestras Preguntas Frecuentes, donde encontrarás respuestas rápidas sobre entradas, horarios, accesos, servicios y mucho más.</p>
                         <p>Tu experiencia nos importa, y cada mensaje nos ayuda a mejorar.</p>
-                        <p class="custom-text-secondary">¡Hablemos! Estamos a un mensaje de distancia.</p>
+                        <p class="custom-text-secondary"><i>¡Hablemos! Estamos a un mensaje de distancia.</i></p>
                     </div>
                 </div>
             </div>
-            <div id="alert-success" class="alert alert-success d-flex align-items-center justify-content-center w-50 fixed-top mt-4 fade-animation" role="alert" style="display: none !important; margin-inline: auto;">
+            <div id="alert-success" class="alert alert-success d-flex align-items-center justify-content-center w-lg-50 m-3 fixed-top mt-4 fade-animation" role="alert" style="display: none !important;">
                 <i class="fa-solid fa-circle-check pe-3"></i>
                 <div>El mensaje se ha enviado correctamente!</div>
             </div>
-            <div id="alert-danger" class="alert alert-danger d-flex align-items-center justify-content-center w-50 fixed-top mt-4 fade-animation" role="alert" style="display: none !important; margin-inline: auto;">
+            <div id="alert-danger" class="alert alert-danger d-flex align-items-center justify-content-center w-lg-50 m-3 fixed-top mt-4 fade-animation" role="alert" style="display: none !important;">
                 <i class="fa-solid fa-triangle-exclamation pe-3"></i>
                 <div>No se ha podido enviar el mensaje. Complete los campos correctamente.</div>
             </div>
         </main>
         <footer>
-            <div class="text-center p-2 fixed-bottom custom-bg-color-footer-style">
-                Grupo 4: Galo Guardia - Kevin Mediña - Milagros Garrido
+            <div class="d-flex justify-content-between align-items-center p-2 fixed-bottom custom-bg-color-footer-style text-secondary">
+                <span>Trabajo grupal - Materia Diseño y Desarrollo Web (11842 - Grupo 4) | Galo Guardia - Kevin Mediña - Milagros Garrido | <a href="https://galoguardia-gh.github.io/TP_Final_Grupal_G4/" target="_blank">Sitio del Grupo</a></span>
+                <img src="../img/uade_logo.png" class="custom-uade-img" alt="UADE_Image">
             </div>
         </footer>
     </body>

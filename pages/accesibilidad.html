@@ -13,13 +13,13 @@
     </head>
     <body class="custom-bg-img-body pb-4">
         <header>
-            <nav class="navbar navbar-expand-lg border-bottom border-white custom-bg-navbar">
+            <nav class="navbar navbar-expand-lg border-bottom border-white custom-bg-navbarfixed-top">
                 <div class="container-fluid">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
-                        <div>
+                        <div class="d-none d-md-block">
                             <a class="navbar-brand" href="./inicio.html">
                                 <img src="../img/BAaventura.png" class="custom-img-navbar rounded-3" alt="Logo BAaventura">
                             </a>
@@ -53,9 +53,9 @@
         </header>
         <main>
             <div class="m-3 pb-5">
-                <div class="text-center mx-5">
+                <div class="text-center mx-lg-5">
                     <h3 class="p-3 border-bottom">Accesibilidad</h3>
-                    <div class="w-75 m-auto">
+                    <div class="w-lg-75 m-auto">
                         <div class="card p-3">
                             <div class="card-body text-center">
                                 <h5 class="card-title mb-3 pb-3 border-bottom"><b>Información para personas con discapacidad</b></h5>
@@ -70,7 +70,7 @@
                     </div>
                 </div>
                 <div class="d-flex flex-wrap justify-content-center my-5">
-                    <div class="col-3 mx-5">
+                    <div class="col-lg-3 mx-lg-5 w-100-mobile">
                         <a href="#" class="card custom-card-animation py-5 p-3 text-decoration-none">
                             <img src="../img/parking_logo.png" class="card-img-top" alt="Parking_Image">
                             <div class="card-body text-center d-flex flex-column justify-content-between w-100">
@@ -81,7 +81,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-3">
+                    <div class="col-lg-3 w-100-mobile">
                         <a href="#" class="card custom-card-animation py-5 p-3 text-decoration-none">
                             <img src="../img/rampas_logo.png" class="card-img-top" alt="Rampas_Image">
                             <div class="card-body text-center d-flex flex-column justify-content-between w-100">
@@ -92,7 +92,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-3 mx-5">
+                    <div class="col-lg-3 mx-lg-5 w-100-mobile">
                         <a href="#" class="card custom-card-animation py-5 p-3 text-decoration-none">
                             <img src="../img/toilet_logo.png" class="card-img-top" alt="Toilet_Image">
                             <div class="card-body text-center d-flex flex-column justify-content-between w-100">
@@ -107,8 +107,9 @@
             </div>
         </main>
         <footer>
-            <div class="text-center p-2 fixed-bottom custom-bg-color-footer-style">
-                Grupo 4: Galo Guardia - Kevin Mediña - Milagros Garrido
+            <div class="d-flex justify-content-between align-items-center p-2 fixed-bottom custom-bg-color-footer-style text-secondary">
+                <span>Trabajo grupal - Materia Diseño y Desarrollo Web (11842 - Grupo 4) | Galo Guardia - Kevin Mediña - Milagros Garrido | <a href="https://galoguardia-gh.github.io/TP_Final_Grupal_G4/" target="_blank">Sitio del Grupo</a></span>
+                <img src="../img/uade_logo.png" class="custom-uade-img" alt="UADE_Image">
             </div>
         </footer>
     </body>

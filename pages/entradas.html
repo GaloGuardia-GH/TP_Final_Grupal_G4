@@ -13,13 +13,13 @@
     </head>
     <body class="custom-bg-img-body pb-4">
         <header>
-            <nav class="navbar navbar-expand-lg border-bottom border-white custom-bg-navbar">
+            <nav class="navbar navbar-expand-lg border-bottom border-white custom-bg-navbar fixed-top">
                 <div class="container-fluid">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
-                        <div>
+                        <div class="d-none d-md-block">
                             <a class="navbar-brand" href="./inicio.html">
                                 <img src="../img/BAaventura.png" class="custom-img-navbar rounded-3" alt="Logo BAaventura">
                             </a>
@@ -53,14 +53,14 @@
         </header>
         <main>
             <div class="m-3 pb-5">
-                <div class="text-center mx-5">
+                <div class="text-center mx-lg-5">
                     <h3 class="p-3 border-bottom">Entradas</h3>
                     <p class="mt-3 text-secondary">
                         Elegi tu entrada y planificá tu visita a BAaventura, el parque de atracciones donde la diversión y la aventura se unen para crear experiencias inolvidables.
                     </p>
                 </div>
                 <div class="d-flex flex-wrap justify-content-center my-4">
-                    <div class="col-2">
+                    <div class="col-lg-2 w-100-mobile">
                         <a href="#" class="card custom-card-animation custom-card-ticket p-3 text-decoration-none">
                             <img src="../img/entrada_logo.png" class="card-img-top custom-entrada-img" alt="Entrada_Image">
                             <div class="card-body text-center d-flex flex-column justify-content-between w-100">
@@ -74,7 +74,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-2">
+                    <div class="col-lg-2 w-100-mobile">
                         <a href="#" class="card custom-card-animation custom-card-ticket p-3 text-decoration-none">
                             <img src="../img/entrada_logo.png" class="card-img-top custom-entrada-img" alt="Entrada_Image">
                             <div class="card-body text-center d-flex flex-column justify-content-between w-100">
@@ -88,7 +88,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-2">
+                    <div class="col-lg-2 w-100-mobile">
                         <a href="#" class="card custom-card-animation custom-card-ticket p-3 text-decoration-none">
                             <img src="../img/entrada_logo.png" class="card-img-top custom-entrada-img" alt="Entrada_Image">
                             <div class="card-body text-center d-flex flex-column justify-content-between w-100">
@@ -104,29 +104,30 @@
                     </div>
                 </div>
                 <div class="d-flex flex-wrap justify-content-center my-5">
-                    <div class="d-flex flex-wrap justify-content-center align-items-center col-7 mb-3">
-                        <span class="col-4 text-end pe-4"><b>Seleccione una fecha:</b></span>
-                        <div class="col-3">
+                    <div class="d-flex flex-wrap justify-content-lg-center align-items-center col-lg-7 mb-3 w-100-mobile form-control-container-mobile">
+                        <span class="col-lg-4 text-end pe-lg-4"><b>Seleccione una fecha:</b></span>
+                        <div class="col-lg-3">
                             <input type="date" class="form-control custom-form-control" id="fechaSeleccionada" name="fechaSeleccionada">
                         </div>
                     </div>
-                    <div class="d-flex flex-wrap justify-content-center align-items-center col-7">
-                        <span class="col-4 text-end pe-4"><b>Cantidad:</b></span>
-                        <div class="col-3">
+                    <div class="d-flex flex-wrap justify-content-lg-center align-items-center col-lg-7 w-100-mobile form-control-container-mobile">
+                        <span class="col-lg-4 text-end pe-lg-4"><b>Cantidad:</b></span>
+                        <div class="col-lg-3">
                             <input type="number" class="form-control custom-form-control" id="cantidadSeleccionada" name="cantidadSeleccionada">
                         </div>
                     </div>
                 </div>
                 <div class="d-flex flex-wrap justify-content-center my-5">
-                    <button class="btn custom-button custom-button-text col-1">
+                    <button class="btn custom-button custom-button-text col-1 w-100-mobile">
                         <b>Comprar</b>
                     </button>
                 </div>
             </div>
         </main>
         <footer>
-            <div class="text-center p-2 fixed-bottom custom-bg-color-footer-style">
-                Grupo 4: Galo Guardia - Kevin Mediña - Milagros Garrido
+            <div class="d-flex justify-content-between align-items-center p-2 fixed-bottom custom-bg-color-footer-style text-secondary">
+                <span>Trabajo grupal - Materia Diseño y Desarrollo Web (11842 - Grupo 4) | Galo Guardia - Kevin Mediña - Milagros Garrido | <a href="https://galoguardia-gh.github.io/TP_Final_Grupal_G4/" target="_blank">Sitio del Grupo</a></span>
+                <img src="../img/uade_logo.png" class="custom-uade-img" alt="UADE_Image">
             </div>
         </footer>
     </body>
