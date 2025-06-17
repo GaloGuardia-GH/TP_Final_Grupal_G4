@@ -99,6 +99,8 @@ function mapCardActivity(atraccion) {
     const colText = document.createElement('div');
     colText.classList.add('col-md-8');
     colText.classList.add('ps-3');
+    colText.classList.add('pt-3');
+    colText.classList.add('pt-lg-0');
     const cardBody = document.createElement('div');
     cardBody.classList.add('card-body');
     colText.appendChild(cardBody);
