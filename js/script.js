@@ -47,11 +47,13 @@ function filterActivities(item) {
     let inputSearchFunction = () => ((filterValues.inputSearchValue == '') || (filterValues.inputSearchValue != '' && (item.nombre.toLowerCase().includes(filterValues.inputSearchValue.toLowerCase()) || item.descripcion.toLowerCase().includes(filterValues.inputSearchValue.toLowerCase()))));
     let inputNumberAlturaFunction = () => ((filterValues.inputNumberAlturaValue == '') || (filterValues.inputNumberAlturaValue != '' && item.alturaMinima <= parseInt(filterValues.inputNumberAlturaValue)));
     let customRangeEdadFunction = () => (item.edadMinima <= parseInt(filterValues.customRangeEdadValue) && item.edadMaxima >= parseInt(filterValues.customRangeEdadValue));
-    let flexCheckShowsFunction = () => ((!filterValues.flexCheckShowsChecked) || (filterValues.flexCheckShowsChecked && item.tipo == 'Shows'));
-    let flexCheckAguaFunction = () => ((!filterValues.flexCheckAguaChecked) || (filterValues.flexCheckAguaChecked && item.tipo == 'Agua'));
-    let flexCheckAventuraFunction = () => ((!filterValues.flexCheckAventuraChecked) || (filterValues.flexCheckAventuraChecked && item.tipo == 'Aventura'));
+    let flexCheckShowsFunction = () => (filterValues.flexCheckShowsChecked && item.tipo == 'Shows');
+    let flexCheckAguaFunction = () => (filterValues.flexCheckAguaChecked && item.tipo == 'Agua');
+    let flexCheckAventuraFunction = () => (filterValues.flexCheckAventuraChecked && item.tipo == 'Aventura');
 
-    return (inputSearchFunction() && inputNumberAlturaFunction() && customRangeEdadFunction() && flexCheckShowsFunction() && flexCheckAguaFunction() && flexCheckAventuraFunction());
+    return (inputSearchFunction() && inputNumberAlturaFunction() && customRangeEdadFunction() &&
+            ((!filterValues.flexCheckShowsChecked && !filterValues.flexCheckAguaChecked && !filterValues.flexCheckAventuraChecked) ||
+            (flexCheckShowsFunction() || flexCheckAguaFunction() || flexCheckAventuraFunction())));
 }
 
 function handleChangeCustomRangeEdadInput() {
