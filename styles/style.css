@@ -1,5 +1,9 @@
 /* Cuerpo del sitio */
 
+main {
+    margin-top: 5rem !important;
+}
+
 body {
   font-family: Roboto;
   font-size: 1.2em;
@@ -44,7 +48,6 @@ nav {
 
 .navbar-brand:hover {
   color: #1565C0;
-  text-decoration: underline;
 }
 
 .navbar-toggler {
@@ -316,6 +319,10 @@ nav {
     color: #6c757d !important;
 }
 
+.custom-uade-img {
+    height: 1.3rem;
+}
+
 /* Alerts */
 
 .fade-animation {
@@ -333,6 +340,32 @@ nav {
     0%, 10% { opacity: 0; }
     20%, 80% { opacity: 1; }
     90%, 100% { opacity: 0; }
+}
+
+/*  */
+
+/* Mobile Version */
+
+@media screen and (max-width: 767px) {
+    main {
+        margin-bottom: 5rem !important;
+    }
+
+    .custom-list-group {
+        width: 100% !important;
+    }
+
+    .custom-card-animation-mobile {
+        padding: 1.5rem !important;
+    }
+
+    .w-100-mobile {
+        width: 100% !important;
+    }
+
+    .form-control-container-mobile {
+        justify-content: space-between !important;
+    }
 }
 
 /*  */
