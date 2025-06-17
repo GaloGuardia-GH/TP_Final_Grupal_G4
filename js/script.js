@@ -94,7 +94,7 @@ function mapCardActivity(atraccion) {
     const colImage = document.createElement('div');
     colImage.classList.add('col-md-4');
     colImage.innerHTML = `
-        <img src="${atraccion.imagen}" class="img-fluid rounded-1 custom-img-fix-style" alt="${atraccion.nombre}">
+        <img src="${atraccion.imagen}" class="img-fluid rounded-1 custom-img-fix-style-2" alt="${atraccion.nombre}">
     `;
     const colText = document.createElement('div');
     colText.classList.add('col-md-8');

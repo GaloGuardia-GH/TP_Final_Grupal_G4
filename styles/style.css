@@ -270,6 +270,12 @@ nav {
     object-fit: cover !important;
 }
 
+.custom-img-fix-style-2 {
+    width: 100% !important;
+    height: 20rem !important;
+    object-fit: cover !important;
+}
+
 .custom-card-text {
     font-size: 15px !important;
 }
